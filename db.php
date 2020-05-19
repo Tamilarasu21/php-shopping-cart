@@ -43,10 +43,10 @@ class db
             }
             else
             {
-                return false;
+                $que="insert into products (product_name,product_price,product_image) values('one plus',37000,'./upload/iphone.png');";
+                $exe=mysqli_query($this->con,$que);
             }
         }
-
     }
 
     #get product from database
